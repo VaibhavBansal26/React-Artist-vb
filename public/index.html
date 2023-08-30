@@ -15,6 +15,9 @@
       user's mobile device or desktop. See https://developers.google.com/web/fundamentals/web-app-manifest/
     -->
     <link rel="manifest" href="%PUBLIC_URL%/manifest.json" />
+    <link rel="stylesheet" type="text/css" href="/css/styles.css"/>
+    <link href="https://fonts.googleapis.com/css2?family=Monoton&family=Roboto:ital,wght@1,300&display=swap" rel="stylesheet">
+
     <!--
       Notice the use of %PUBLIC_URL% in the tags above.
       It will be replaced with the URL of the `public` folder during the build.
@@ -26,6 +29,28 @@
     -->
     <title>React App</title>
   </head>
+  <script src="https://www.gstatic.com/firebasejs/7.15.5/firebase-app.js"></script>
+
+<!-- TODO: Add SDKs for Firebase products that you want to use
+     https://firebase.google.com/docs/web/setup#available-libraries -->
+<script src="https://www.gstatic.com/firebasejs/7.15.5/firebase-analytics.js"></script>
+
+<script>
+  // Your web app's Firebase configuration
+  var firebaseConfig = {
+    apiKey: "AIzaSyDpLuI0cwNgG9nk0WrPvQusyEzCKMUJ1so",
+    authDomain: "react-artist-a0b21.firebaseapp.com",
+    databaseURL: "https://react-artist-a0b21.firebaseio.com",
+    projectId: "react-artist-a0b21",
+    storageBucket: "react-artist-a0b21.appspot.com",
+    messagingSenderId: "45141158724",
+    appId: "1:45141158724:web:2865fd99de914cf45d0511",
+    measurementId: "G-0SBTY3P4Y9"
+  };
+  // Initialize Firebase
+  firebase.initializeApp(firebaseConfig);
+  firebase.analytics();
+</script>
   <body>
     <noscript>You need to enable JavaScript to run this app.</noscript>
     <div id="root"></div>
